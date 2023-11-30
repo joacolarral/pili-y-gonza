@@ -1,0 +1,18 @@
+.card {
+  max-width: 300px;
+  border: 8px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  margin: 16px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  padding: 24px;
+}

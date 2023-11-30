@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-right: 1px solid $primary-color;
+}
+.time:last-child {
+  border: 0;
+}
+
+.number {
+  font-size: 2.5rem; // Tamaño grande para los números
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1rem; // Tamaño más pequeño para las etiquetas de tiempo
+  text-transform: lowercase; // Opciones pueden ser 'capitalize', 'uppercase', 'lowercase'
+}
