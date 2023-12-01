@@ -3,7 +3,7 @@ import styles from "./Countdown.module.scss";
 import Section from "../../components/Section";
 
 const Countdown = () => {
-  const targetDate = new Date("2024-03-16T00:00:00");
+  const targetDate = new Date("2024-03-09T00:00:00");
 
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -40,7 +40,7 @@ const Countdown = () => {
   });
 
   return (
-    <Section backgroundColor={"#f5f5f5"}>
+    <Section secondaryBg>
       <div className={styles.container}>
         <h1>Faltan</h1>
         <div className={styles.countdown}>

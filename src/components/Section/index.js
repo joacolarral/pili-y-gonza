@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./Section.module.scss";
 import PropTypes from "prop-types";
 
-const Section = ({ children, backgroundColor, padding }) => {
+const Section = ({ children, secondaryBg, padding }) => {
   return (
     <div className={styles.container}>
       <section
         className={styles.section}
         style={{
-          backgroundColor,
+          backgroundColor: secondaryBg ? "#f5f5f5" : "#fff",
           padding,
         }}
       >
@@ -20,11 +20,11 @@ const Section = ({ children, backgroundColor, padding }) => {
 
 Section.propTypes = {
   children: PropTypes.string.isRequired,
-  backgroundColor: PropTypes.string,
+  secondaryBg: PropTypes.bool,
 };
 
 Section.defaultProps = {
-  backgroundColor: "#fff",
+  secondaryBg: false,
   padding: "2rem 0",
 };
 

@@ -2,9 +2,9 @@
 import React from "react";
 import styles from "./CardImage.module.scss"; // Importando SCSS como módulo
 
-const CardImage = ({ title, description, imageUrl }) => {
+const CardImage = ({ title, imageUrl }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.container}>
       <img src={imageUrl} alt={title} className={styles.image} />
       <div className={styles.content} />
     </div>

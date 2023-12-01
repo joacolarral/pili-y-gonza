@@ -32,50 +32,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-  }
-}
-
-.banner {
-  position: relative;
-  background: #fff; // Assuming a white background
-  //   border: 2px solid #c0a080; // Adjust the color and thickness as needed
-  // Define the size and other properties for the main banner element
-
-  // Pseudo-element for the decorative corner cut
-  &::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 50px 50px 0 0; // Adjust the size of the cut as needed
-    border-color: #c0a080 transparent transparent transparent; // Match the border color
-    bottom: -2px; // Aligns with the bottom border considering the border thickness
-    right: -2px; // Aligns with the right border considering the border thickness
+    gap: 1rem;
   }
 
-  // Pseudo-elements for the circular details
-  &::after,
-  &:nth-of-type(1)::after {
-    content: "";
-    position: absolute;
-    width: 20px; // Adjust the size of the circles as needed
-    height: 20px; // Adjust the size of the circles as needed
-    background-color: #c0a080; // Adjust the color as needed
-    border-radius: 50%;
-    // Positioning for the circles will need to be adjusted
-  }
-
-  // Position the first circle
-  &::after {
-    bottom: 10px; // Adjust the position as needed
-    right: 10px; // Adjust the position as needed
-  }
-
-  // Position the second circle (if there are multiple)
-  &:nth-of-type(1)::after {
-    bottom: 60px; // Adjust the position as needed
-    right: 60px; // Adjust the position as needed
+  button {
+    width: 100%;
   }
 }

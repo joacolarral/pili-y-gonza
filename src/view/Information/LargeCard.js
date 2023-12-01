@@ -12,8 +12,10 @@ export default function LargeCard({ title, details }) {
           {details.map((detail) => {
             return (
               <div key={detail.title} className={styles.detailsContainer}>
-                <h2>{detail.title}</h2>
-                <p>{detail.description}</p>
+                <div>
+                  <h2>{detail.title}</h2>
+                  <p>{detail.description}</p>
+                </div>
                 <Button onClick={detail.onClick}>{detail.buttonLabel}</Button>
               </div>
             );

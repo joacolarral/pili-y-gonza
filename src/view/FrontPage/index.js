@@ -2,6 +2,7 @@ import React from "react";
 import Section from "../../components/Section";
 import fotoPortada from "../../images/portada.jpg";
 import styles from "./FrontPage.module.scss";
+import SaveTheDate from "../../components/SaveDate";
 
 export default function FrontPage() {
   return (
@@ -12,14 +13,7 @@ export default function FrontPage() {
         </div>
         <div className={styles.contentContainer}>
           <div className={styles.content}>
-            <p className={styles.dateNumber}>01.01.2024</p>
-            <div className={styles.initialNames}>
-              <span>B</span>
-              <span>&</span>
-              <span>J</span>
-            </div>
-            <h2>BELEN & JUAN</h2>
-
+            <SaveTheDate />
             <p>
               Todos somos mortales, hasta el primer beso y la segunda copa de
               vino
