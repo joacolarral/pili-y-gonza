@@ -3,15 +3,8 @@
 
 .container {
   display: flex;
-}
-
-.imgContainer {
-  flex-basis: 50%;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  justify-content: center;
+  align-items: center;
 }
 
 .dateNumber {
@@ -19,14 +12,12 @@
 }
 
 .contentContainer {
-  flex-basis: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content {
-  border: 1px solid blue;
   padding: 6rem;
   display: flex;
   flex-direction: column;

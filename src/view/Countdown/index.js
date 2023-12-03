@@ -17,7 +17,6 @@ const Countdown = () => {
         seg: Math.floor((difference / 1000) % 60),
       };
     } else {
-      // Cuando el countdown llega a 0
       timeLeft = {
         dias: 0,
         hs: 0,

@@ -25,7 +25,6 @@ Section.propTypes = {
 
 Section.defaultProps = {
   secondaryBg: false,
-  padding: "2rem 0",
 };
 
 export default Section;

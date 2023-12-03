@@ -5,6 +5,9 @@ import Ribbon from "../../components/Ribbon";
 import styles from "./SocialMedia.module.scss";
 
 export default function SocialMedia() {
+  const goToInstagram = () =>
+    window.open("https://www.instagram.com/juanbucca/", "_blank");
+
   return (
     <Section>
       <div className={styles.container}>
@@ -16,7 +19,7 @@ export default function SocialMedia() {
         <Ribbon>
           <a href="https://www.instagram.com/juanbucca/">#beluyjuan</a>
         </Ribbon>
-        <Button>Numero de cuenta</Button>
+        <Button onClick={goToInstagram}>Ver en Instagram</Button>
       </div>
     </Section>
   );

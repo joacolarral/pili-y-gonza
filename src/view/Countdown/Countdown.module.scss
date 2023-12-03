@@ -1,13 +1,11 @@
 @import "../../styles/variables.scss";
 
 .container {
-  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
 }
 
 .countdown {
@@ -29,11 +27,12 @@
 }
 
 .number {
-  font-size: 2.5rem; // Tamaño grande para los números
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .label {
-  font-size: 1rem; // Tamaño más pequeño para las etiquetas de tiempo
-  text-transform: lowercase; // Opciones pueden ser 'capitalize', 'uppercase', 'lowercase'
+  font-size: 1rem;
+  text-transform: lowercase;
+  color: $secondary-color;
 }

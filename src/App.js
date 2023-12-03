@@ -11,14 +11,16 @@ import SocialMedia from "./view/SocialMedia";
 function App() {
   return (
     <div className="App">
-      <FrontPage />
-      <Countdown />
-      <Information />
-      <Gallery />
-      <AdditionalInfo />
-      <Gifts />
-      <SocialMedia />
-      <Footer />
+      <div className="container">
+        <FrontPage />
+        <Countdown />
+        <Information />
+        <Gallery />
+        <AdditionalInfo />
+        <Gifts />
+        <SocialMedia />
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -9,13 +9,13 @@ $laptop-width: 1440px;
 }
 
 @mixin tablet {
-  @media (max-width: #{$tablet-width}) {
+  @media (min-width: #{$phone-width + 1}) {
     @content;
   }
 }
 
 @mixin laptop {
-  @media (max-width: #{$laptop-width + 1}) {
+  @media (min-width: #{$tablet-width + 1}) {
     @content;
   }
 }

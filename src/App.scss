@@ -1,9 +1,13 @@
 @import "./styles/variables.scss";
+@import "./styles/mixin.scss";
+
 .App {
   text-align: center;
   background-color: #f5f5f5;
   min-height: 100vh;
   color: $primary-color;
+  display: flex;
+  justify-content: center;
 
   h1 {
     font-size: 3rem;
@@ -26,4 +30,20 @@
 
 span {
   content: "\22C8";
+}
+
+@include phone {
+  .container {
+    width: 100%;
+  }
+}
+@include tablet {
+  .container {
+    width: 100%;
+  }
+}
+@include laptop {
+  .container {
+    max-width: 1200px;
+  }
 }

@@ -1,3 +1,5 @@
+@import "../../styles/mixin.scss";
+
 .cardsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -5,8 +7,17 @@
 }
 
 .container {
-  padding: 1rem 4rem;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+@include phone {
+  .container {
+    padding: 0 1rem;
+  }
+  .cardsContainer {
+    grid-template-columns: 1fr;
+  }
 }

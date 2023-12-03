@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Card.module.scss"; // Importa los estilos SCSS como módulo
 import Button from "../Button";
 
-const Card = ({ title, subtitle, buttonText, imageUrl }) => {
+const Card = ({ title, subtitle, buttonText, imageUrl, onClick }) => {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
@@ -12,7 +12,7 @@ const Card = ({ title, subtitle, buttonText, imageUrl }) => {
           <img src={imageUrl} alt={title} className={styles.image} />
         )}
         <p className={styles.subtitle}>{subtitle}</p>
-        <Button>{buttonText}</Button>
+        <Button onClick={onClick}>{buttonText}</Button>
       </div>
     </div>
   );

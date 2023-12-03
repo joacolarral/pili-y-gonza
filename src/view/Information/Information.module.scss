@@ -1,15 +1,20 @@
 @import "../../styles/variables.scss";
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .largeCardContainer {
   border: 1px solid $primary-color;
   padding: 2rem;
   border-radius: 12px;
+  max-width: 350px;
   .content {
     background-color: $backgroundColorPrimary;
     padding: 3rem;
