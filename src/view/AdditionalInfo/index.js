@@ -6,6 +6,10 @@ import Modal from "../../components/Modal";
 import SongSuggest from "../../components/Modal/ModalForm/SongSuggest";
 import DressCode from "../../components/Modal/ModalInfo/DressCode";
 import TipsAndNotes from "../../components/Modal/ModalInfo/TipsAndNotes";
+import HeartArrows from "../../icons/heartArrows";
+import Corchea from "../../icons/corchea";
+import Moño from "../../icons/moño";
+import Board from "../../icons/board";
 
 export default function AdditionalInfo() {
   const [modalContent, setModalContent] = useState(null);
@@ -15,31 +19,35 @@ export default function AdditionalInfo() {
   return (
     <Section>
       <div className={styles.container}>
-        <div>
+        <div className={styles.header}>
+          <HeartArrows />
           <h1>Fiesta</h1>
-          <p>
+          <h2>
             Hagamos juntos una fiesta única. Dejamos algunos detalles a tener en
             cuenta.
-          </p>
+          </h2>
         </div>
         <div className={styles.cardsContainer}>
           <Card
-            title="Musica"
+            title="Música"
             subtitle="¿Cuál es la canción que no debe faltar en la playlist de la fiesta?"
             buttonText="Sugerir Canción"
             onClick={() => openModalWithContent(<SongSuggest />)}
+            icon={<Corchea />}
           />
           <Card
             title="Dress Code"
             subtitle="Una orientación para tu vestuario"
             buttonText="Ver más"
             onClick={() => openModalWithContent(<DressCode />)}
+            icon={<Moño />}
           />
           <Card
             title="Tips y Notas"
             subtitle="Informacion adicional para tener en cuenta"
             buttonText="+ Info"
             onClick={() => openModalWithContent(<TipsAndNotes />)}
+            icon={<Board />}
           />
         </div>
       </div>
