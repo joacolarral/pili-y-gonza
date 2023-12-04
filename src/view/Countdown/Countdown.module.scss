@@ -1,11 +1,24 @@
 @import "../../styles/variables.scss";
 
+.background {
+  background-image: url("../../images/bg_green.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  background-color: rgba(149, 175, 158, 0.6);
+  color: white;
 }
 
 .countdown {
@@ -20,19 +33,19 @@
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem;
-  border-right: 1px solid $primary-color;
+  border-right: 1px solid;
 }
 .time:last-child {
   border: 0;
 }
 
 .number {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .label {
   font-size: 1rem;
   text-transform: lowercase;
-  color: $secondary-color;
+  font-family: "Abel";
 }

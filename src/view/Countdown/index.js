@@ -11,14 +11,14 @@ const Countdown = () => {
 
     if (difference > 0) {
       timeLeft = {
-        dias: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        días: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hs: Math.floor((difference / (1000 * 60 * 60)) % 24),
         min: Math.floor((difference / 1000 / 60) % 60),
         seg: Math.floor((difference / 1000) % 60),
       };
     } else {
       timeLeft = {
-        dias: 0,
+        días: 0,
         hs: 0,
         min: 0,
         seg: 0,
@@ -39,16 +39,18 @@ const Countdown = () => {
   });
 
   return (
-    <Section secondaryBg>
-      <div className={styles.container}>
-        <h1>Faltan</h1>
-        <div className={styles.countdown}>
-          {Object.keys(timeLeft).map((interval, index) => (
-            <div className={styles.time} key={index}>
-              <span className={styles.number}>{timeLeft[interval]}</span>
-              <span className={styles.label}>{interval}</span>
-            </div>
-          ))}
+    <Section padding={0}>
+      <div className={styles.background}>
+        <div className={styles.container}>
+          <h1>Faltan</h1>
+          <div className={styles.countdown}>
+            {Object.keys(timeLeft).map((interval, index) => (
+              <div className={styles.time} key={index}>
+                <span className={styles.number}>{timeLeft[interval]}</span>
+                <span className={styles.label}>{interval}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Section>
