@@ -1,6 +1,15 @@
 @import "./styles/variables.scss";
 @import "./styles/mixin.scss";
 
+@font-face {
+  font-family: "Abel";
+  src: url("./styles/fonts/Abel-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Akshar";
+  src: url("./styles/fonts/Akshar-VariableFont_wght.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
   background-color: #f5f5f5;
@@ -8,14 +17,18 @@
   color: $primary-color;
   display: flex;
   justify-content: center;
+  font-family: "Akshar", sans-serif;
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin: 0;
+    font-weight: 500;
   }
 
   h2 {
     margin: 0;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
   }
   p,
   h2 {
@@ -24,7 +37,8 @@
 
   p {
     margin: 0;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
@@ -43,7 +57,7 @@ span {
   }
 }
 @include laptop {
-  .container {
-    max-width: 1200px;
-  }
+  // .container {
+  //   max-width: 1200px;
+  // }
 }
