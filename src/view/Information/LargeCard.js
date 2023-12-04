@@ -3,19 +3,18 @@ import PropTypes from "prop-types";
 import Button from "../../components/Button";
 import styles from "./Information.module.scss";
 
-export default function LargeCard({ title, details }) {
+export default function LargeCard({ title, details, icon }) {
   return (
     <div className={styles.largeCardContainer}>
       <div className={styles.content}>
+        {icon}
         <h1>{title}</h1>
         <div className={styles.details}>
           {details.map((detail) => {
             return (
               <div key={detail.title} className={styles.detailsContainer}>
-                <div>
-                  <h2>{detail.title}</h2>
-                  <p>{detail.description}</p>
-                </div>
+                <h2>{detail.title}</h2>
+                <p>{detail.description}</p>
                 <Button onClick={detail.onClick}>{detail.buttonLabel}</Button>
               </div>
             );
@@ -36,8 +35,10 @@ LargeCard.propTypes = {
       buttonLabel: PropTypes.string,
     })
   ).isRequired,
+  icon: PropTypes.elementType,
 };
 
 LargeCard.defaultProps = {
   details: [],
+  icon: null,
 };
