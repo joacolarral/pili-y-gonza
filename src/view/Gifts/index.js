@@ -4,6 +4,8 @@ import Button from "../../components/Button";
 import styles from "./Gifts.module.scss";
 import Modal from "../../components/Modal";
 import AccountNumber from "../../components/Modal/ModalInfo/AccountNumber";
+import Gift from "../../icons/gift";
+import greenPlant from "../../images/green_gifts.png";
 
 export default function Gifts() {
   const [modalContent, setModalContent] = useState(null);
@@ -11,15 +13,18 @@ export default function Gifts() {
   const closeModal = () => setModalContent(null);
 
   return (
-    <Section secondaryBg>
+    <Section padding={0}>
+      <div className={styles.greenPlant}>
+        <img src={greenPlant} alt="" />
+      </div>
       <div className={styles.container}>
         <div>
           <h1>Regalos</h1>
-          <p>Si deseas regalarnos algo más que tu hermosa presencia</p>
+          <h2>Si deseas regalarnos algo más que tu hermosa presencia</h2>
         </div>
-        <div className={styles.icon} />
+        <Gift />
         <Button onClick={() => openModalWithContent(<AccountNumber />)}>
-          Numero de cuenta
+          Número de cuenta
         </Button>
       </div>
       <Modal isOpen={modalContent !== null} onClose={closeModal}>
