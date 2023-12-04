@@ -6,7 +6,7 @@
   align-items: center;
   gap: 2rem;
   background-color: $backgroundColorSecondary;
-  padding: 7rem 0;
+  padding: 8rem 0;
 
   button {
     padding: 0.8rem 2rem;
@@ -26,5 +26,6 @@
   img {
     position: absolute;
     right: 0;
+    width: 47.5rem;
   }
 }
