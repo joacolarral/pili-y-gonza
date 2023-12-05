@@ -10,7 +10,7 @@
   position: relative;
   img {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     right: 0;
   }
@@ -19,7 +19,7 @@
   position: relative;
   img {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     bottom: 0;
     left: 0;
   }
@@ -94,9 +94,12 @@
     }
   }
   .contentContainer {
-    height: 90vh;
+    height: 100vh;
+    position: relative;
+    z-index: 999;
     h2 {
       font-size: 0.8rem;
+      position: relative;
     }
   }
 }
