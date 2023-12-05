@@ -7,16 +7,22 @@
   align-items: center;
 }
 .greenTop {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
+  position: relative;
+  img {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+  }
 }
 .greenBottom {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  img {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .dateNumber {
@@ -24,6 +30,7 @@
   font-weight: 400;
   color: $primary-color !important;
   font-family: "Akshar";
+  padding-bottom: 1rem;
 }
 
 .contentContainer {
@@ -31,7 +38,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .content {
@@ -60,13 +67,36 @@
 // }
 
 .initialNames {
-  border-top: 1px solid $primary-color;
-  border-bottom: 1px solid $primary-color;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
   padding: 2.5rem 0;
 }
 
 @include laptop {
   .contentContainer {
     height: 100vh;
+  }
+}
+@include phone {
+  .initialNames {
+    img {
+      width: 20rem;
+    }
+  }
+  .greenTop {
+    img {
+      width: 10rem;
+    }
+  }
+  .greenBottom {
+    img {
+      width: 10rem;
+    }
+  }
+  .contentContainer {
+    height: 90vh;
+    h2 {
+      font-size: 0.8rem;
+    }
   }
 }

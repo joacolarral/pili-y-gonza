@@ -14,7 +14,7 @@ export default function Information() {
 
   const openGoogleCalendarEventModal = () => {
     const start = "20240309T200000Z";
-    const end = "20240310T060000Z";
+    const end = "20240310T050000Z";
     const title = encodeURIComponent("Casamiento Belu y Juan");
     const details = encodeURIComponent("Detalles del evento");
     const location = encodeURIComponent(

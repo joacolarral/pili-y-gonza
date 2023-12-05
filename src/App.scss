@@ -29,6 +29,7 @@
     margin: 0;
     font-family: "Abel", sans-serif;
     font-weight: 400;
+    font-size: 1.5rem;
   }
   p,
   h2 {
@@ -55,6 +56,9 @@ span {
 @include phone {
   .container {
     width: 100%;
+  }
+  h2 {
+    font-size: 1.2rem !important;
   }
 }
 @include tablet {
