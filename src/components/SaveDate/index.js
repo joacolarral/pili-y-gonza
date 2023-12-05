@@ -10,7 +10,7 @@ export default function SaveTheDate() {
         <span>&</span>
         <span>J</span>
       </div>
-      <h2>BELEN & JUAN</h2>
+      <h2>BELU & JUAN</h2>
     </div>
   );
 }

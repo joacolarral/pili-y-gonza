@@ -30,6 +30,12 @@ export default function Information() {
     window.open(url, "_blank");
   };
 
+  const openGoogleForms = () => {
+    const url =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdWj8nas8JvGbrFkAf4fLpIRKjRB-iiPNB2NHJFK_LeuPorVQ/viewform?usp=pp_url";
+    window.open(url, "_blank");
+  };
+
   const ceremony = [
     {
       title: "Día",
@@ -38,16 +44,16 @@ export default function Information() {
       onClick: openGoogleCalendarEventModal,
     },
     {
-      title: "Lugar",
-      description: "Lagos Del Rocio, Pilar Centro",
-      buttonLabel: "Confirmar asistencia",
-      onClick: () => openModalWithContent(<ConfirmAssitanceModal />),
-    },
-    {
       title: "Dirección",
       description: "Lagos Del Rocio, Pilar Centro",
       buttonLabel: "Como llegar?",
       onClick: openGoogleMaps,
+    },
+    {
+      title: "Asistencia",
+      description: "Confirmar antes del 15 de enero",
+      buttonLabel: "Completar formulario",
+      onClick: openGoogleForms,
     },
   ];
   // const celebration = [

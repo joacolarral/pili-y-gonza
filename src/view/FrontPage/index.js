@@ -28,8 +28,8 @@ export default function FrontPage() {
           </div>
           <div className={styles.content}>
             <h2>
-              Todos somos mortales, hasta el primer beso y la segunda copa de
-              vino
+              Nos casamos y necesitamos invitados con y sin experiencia para
+              festejar
             </h2>
           </div>
         </div>

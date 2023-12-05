@@ -16,23 +16,26 @@ export default function AdditionalInfo() {
   const openModalWithContent = (content) => setModalContent(content);
   const closeModal = () => setModalContent(null);
 
+  const openSpotify = () => {
+    const url =
+      "https://open.spotify.com/playlist/16EPARFug3WQktMIpy4Qg9?si=Orfmh_LTRxWKe2MkgJy7Nw&pi=e-vCVPxRwXRZW8";
+    window.open(url, "_blank");
+  };
+
   return (
     <Section>
       <div className={styles.container}>
         <div className={styles.header}>
           <HeartArrows />
           <h1>Fiesta</h1>
-          <h2>
-            Hagamos juntos una fiesta única. Dejamos algunos detalles a tener en
-            cuenta.
-          </h2>
+          <h2>¿Listos para dejarlo todo?</h2>
         </div>
         <div className={styles.cardsContainer}>
           <Card
             title="Música"
-            subtitle="¿Cuál es la canción que no debe faltar en la playlist de la fiesta?"
+            subtitle="Te compartimos la playlist para que te pongas al día 😉"
             buttonText="Sugerir Canción"
-            onClick={() => openModalWithContent(<SongSuggest />)}
+            onClick={openSpotify}
             icon={<Corchea />}
           />
           <Card

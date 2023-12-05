@@ -16,9 +16,9 @@ import Carousel from "../../components/Carousel";
 const photos = [photo1, photo2, photo3, photo4, photo5, photo7, photo8];
 
 export default function Gallery() {
-  const swipeables = photos.map((photo, i) => (
-    <CardImage key={i} imageUrl={photo} />
-  ));
+  // const swipeables = photos.map((photo, i) => (
+  //   <CardImage key={i} imageUrl={photo} />
+  // ));
   return (
     <Section secondaryBg>
       <div>
@@ -27,13 +27,15 @@ export default function Gallery() {
         </div>
         <div className={styles.header}>
           <Camera />
-          <h1>Retratos de Nuestro Amor</h1>
-          <h2>Un minuto, un segundo, un instante que queda en la eternidad</h2>
+          <h1>Así los esperamos</h1>
+          {/* <h2>Un minuto, un segundo, un instante que queda en la eternidad</h2> */}
         </div>
-
-        <div className={styles.carousel}>
+        <div className={styles.singlePhoto}>
+          <CardImage imageUrl={photo2} />
+        </div>
+        {/* <div className={styles.carousel}>
           <Carousel swipeables={swipeables} />
-        </div>
+        </div> */}
       </div>
     </Section>
   );
