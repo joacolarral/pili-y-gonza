@@ -69,7 +69,7 @@
 .initialNames {
   border-top: 2px solid $primary-color;
   border-bottom: 2px solid $primary-color;
-  padding: 2.5rem 0;
+  padding: 1rem 0;
 }
 
 @include laptop {
@@ -97,9 +97,34 @@
     height: 100vh;
     position: relative;
     z-index: 999;
+    padding-bottom: 3rem;
     h2 {
       font-size: 0.8rem;
       position: relative;
     }
+  }
+  .dateNumber {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .initialNames {
+    img {
+      width: 18rem;
+    }
+  }
+  .greenTop {
+    img {
+      width: 10rem;
+    }
+  }
+  .greenBottom {
+    img {
+      width: 10rem;
+    }
+  }
+  .contentContainer {
+    padding-bottom: 4rem;
   }
 }

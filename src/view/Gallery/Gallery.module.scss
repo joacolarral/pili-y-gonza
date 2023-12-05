@@ -19,11 +19,14 @@
 }
 
 .carousel {
-  padding: 2rem 1rem 0;
+  height: 72vh;
 }
 
 @include phone {
   .greenImg {
     display: none;
+  }
+  .carousel {
+    height: 75vh;
   }
 }

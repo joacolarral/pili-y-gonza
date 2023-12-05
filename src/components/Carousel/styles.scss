@@ -1,0 +1,44 @@
+@import "../../styles/mixin.scss";
+@import "../../styles/variables.scss";
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 28%;
+}
+.bullets {
+  margin: 12px;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet-active {
+  background: #beaa8f !important;
+}
+
+.swiper-pagination-bullet {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+@include phone {
+  .swiper-slide {
+    width: 80%;
+  }
+}

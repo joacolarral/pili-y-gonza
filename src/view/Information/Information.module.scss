@@ -58,3 +58,10 @@
   justify-content: center;
   gap: 1rem;
 }
+
+@media screen and (max-width: 321px) {
+  .largeCardContainer {
+    border: 0;
+    padding: 0;
+  }
+}
