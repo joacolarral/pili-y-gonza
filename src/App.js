@@ -18,7 +18,7 @@ function App() {
         <Gallery />
         <AdditionalInfo />
         <Gifts />
-        <SocialMedia />
+        {/* <SocialMedia /> */}
         <Footer />
       </div>
     </div>
