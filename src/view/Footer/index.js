@@ -1,5 +1,4 @@
 import React from "react";
-import SaveDate from "../../components/SaveDate";
 import Section from "../../components/Section";
 import styles from "./Footer.module.scss";
 import initialsFooter from "../../images/initials_footer.svg";

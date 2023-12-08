@@ -6,6 +6,7 @@ import FrontPage from "./view/FrontPage";
 import Gallery from "./view/Gallery";
 import Gifts from "./view/Gifts";
 import Information from "./view/Information";
+import MiniFooter from "./view/MiniFooter";
 import SocialMedia from "./view/SocialMedia";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Gifts />
         {/* <SocialMedia /> */}
         <Footer />
+        <MiniFooter />
       </div>
     </div>
   );

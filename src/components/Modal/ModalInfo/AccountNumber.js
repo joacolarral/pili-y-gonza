@@ -1,9 +1,10 @@
 import React from "react";
 import ModalInfo from ".";
+import GiftModal from "../../../icons/gitf_modal";
 
 export default function AccountNumber() {
   return (
-    <ModalInfo title="Regalito">
+    <ModalInfo title="Regalito" icon={<GiftModal />}>
       <p>
         Tenemos una cuenta en pesos para todos aquellos interesados en
         transferir:

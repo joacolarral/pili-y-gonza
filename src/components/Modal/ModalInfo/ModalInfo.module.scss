@@ -1,17 +1,22 @@
 @import "../../../styles/mixin.scss";
+@import "../../../styles/variables.scss";
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   h1 {
     font-size: 2rem;
-    padding: 1rem 0;
-  }
-  p {
-    text-align: justify;
+    color: $primary-color !important;
   }
 }
 
 .content {
-  padding: 0rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .dressCode {
