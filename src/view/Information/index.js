@@ -13,8 +13,8 @@ export default function Information() {
   const closeModal = () => setModalContent(null);
 
   const openGoogleCalendarEventModal = () => {
-    const start = "20240309T200000Z";
-    const end = "20240310T050000Z";
+    const start = "20240316T210000Z";
+    const end = "20240317T050000Z";
     const title = encodeURIComponent("Casamiento Belu y Juan");
     const details = encodeURIComponent("Detalles del evento");
     const location = encodeURIComponent(
@@ -26,7 +26,7 @@ export default function Information() {
   };
 
   const openGoogleMaps = () => {
-    const url = "https://maps.app.goo.gl/dNynbCbt6tdVRKfC6";
+    const url = "https://maps.app.goo.gl/PzjSVS4MQDCZ5LSM8";
     window.open(url, "_blank");
   };
 
@@ -39,21 +39,22 @@ export default function Information() {
   const ceremony = [
     {
       title: "Día",
-      description: "Sábado 09 de Marzo - 17hs",
+      description: "Sábado 16 de Marzo - 1hs",
       buttonLabel: "Agendar",
       onClick: openGoogleCalendarEventModal,
     },
     {
-      title: "Dirección",
-      description: "Lagos Del Rocio, Pilar Centro",
-      buttonLabel: "Como llegar?",
-      onClick: openGoogleMaps,
+      title: "Lugar",
+      description: "Espacio Mendoza",
+      buttonLabel: "Confirmar asistencia",
+      onClick: openGoogleForms,
     },
     {
       title: "Asistencia",
-      description: "Confirmar antes del 15 de enero",
+      description:
+        "Mendoza 139-299, Ingeniero Maschwitz, Provincia de Buenos Aires",
       buttonLabel: "Completar formulario",
-      onClick: openGoogleForms,
+      onClick: openGoogleMaps,
     },
   ];
   // const celebration = [
@@ -79,7 +80,6 @@ export default function Information() {
 
   const icons = (
     <div className={styles.icons}>
-      <Cups />
       <Rings />
     </div>
   );

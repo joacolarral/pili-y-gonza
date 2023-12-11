@@ -1,5 +1,5 @@
 {
-  "short_name": "Belu & Juan",
+  "short_name": "Pili & Gonza",
   "name": "Te invitamos a nuestro casamiento",
   "icons": [
     {
@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.jpg",
-      "type": "image/jpg",
+      "src": "initial_names.svg",
+      "type": "image/svg+xml",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.jpg",
-      "type": "image/jpg",
+      "src": "initial_names.svg",
+      "type": "image/svg+xml",
       "sizes": "512x512"
     }
   ],

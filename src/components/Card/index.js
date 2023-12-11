@@ -7,10 +7,10 @@ import DecorativeLeft from "../../icons/decorativeLeft";
 const Card = ({ title, subtitle, buttonText, icon, onClick }) => {
   return (
     <div className={styles.container}>
-      <div className={styles.decoratives}>
+      {/* <div className={styles.decoratives}>
         <DecorativeLeft />
         <DecorativeRight />
-      </div>
+      </div> */}
       <div className={styles.header}>
         {icon}
         <h1 className={styles.title}>{title}</h1>

@@ -10,13 +10,10 @@
   padding: 8rem 0;
   position: relative;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.6);
-
-  div,
-  svg,
-  button {
-    position: relative;
-    z-index: 2;
-  }
+  background: url("../../images/bg_additional_information.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   button {
     padding: 0.8rem 2rem;
   }
@@ -40,14 +37,27 @@
   }
 }
 
+.buttonOutline {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 2rem !important;
+  }
+  .detailsContainer {
+    p {
+      max-width: 14rem !important;
+    }
+  }
+}
+
 @include phone {
   .container {
-    div,
-    svg,
-    button {
-      position: relative;
-      z-index: 2;
-    }
+    background: url("../../images/bg_additional_information_phone.jpg");
+    padding: 4.5rem 0;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     h2 {
       padding: 0 1rem;

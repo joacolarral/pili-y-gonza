@@ -8,7 +8,7 @@ const Section = ({ children, secondaryBg, padding }) => {
       <section
         className={styles.section}
         style={{
-          backgroundColor: secondaryBg ? "#EDE3D9" : "#fff",
+          backgroundColor: secondaryBg ? "#deebe4" : "#fff",
           padding,
         }}
       >

@@ -8,13 +8,7 @@ export default function Footer() {
     <Section>
       <div className={styles.container}>
         <img src={initialsFooter} alt="" />
-        <div>
-          <p>
-            No se olviden que lo más importante para nosotros es contar con su
-            presencia, y que lo dejen todo en la fiesta.
-          </p>
-          <p>Por favor duerman siesta, no queremos soldados caídos</p>
-        </div>
+
         {/* <SaveDate />
         <div className={styles.optionsContainer}>
           <p>Confirmar asistencia a ceremonia</p>

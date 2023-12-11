@@ -1,16 +1,13 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixin.scss";
 
-.background {
-  background-image: url("../../images/bg_green.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 5rem;
+.container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.container {
+
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,11 +15,10 @@
   gap: 1rem;
   padding: 3rem 2rem;
   border-radius: 24px;
-  background-color: rgba(149, 175, 158, 0.6);
-  color: white;
+  background-color: #edf3ef;
 
   h1 {
-    color: white;
+    color: $primary-color;
   }
 }
 
@@ -56,14 +52,14 @@
 }
 
 @include phone {
-  .container {
+  .content {
     padding: 2rem 1rem;
   }
 }
 
 @media screen and (max-width: 321px) {
-  .container {
-    padding: 2rem 0rem;
+  .content {
+    padding: 2rem 1rem;
   }
   .time {
     padding: 0 1rem;

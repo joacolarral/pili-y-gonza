@@ -32,13 +32,6 @@ export default function AdditionalInfo() {
         </div>
         <div className={styles.cardsContainer}>
           <Card
-            title="Música"
-            subtitle="Te compartimos la playlist para que te pongas al día 😉"
-            buttonText="Sugerir Canción"
-            onClick={openSpotify}
-            icon={<Corchea />}
-          />
-          <Card
             title="Dress Code"
             subtitle="Una orientación para tu vestuario"
             buttonText="Ver más"
@@ -46,12 +39,19 @@ export default function AdditionalInfo() {
             icon={<Moño />}
           />
           <Card
+            title="Música"
+            subtitle="¿Cuál es la canción que no puede falta en la playlist de la fiesta?"
+            buttonText="Sugerir Canción"
+            onClick={openSpotify}
+            icon={<Corchea />}
+          />
+          {/* <Card
             title="Tips y Notas"
             subtitle="Informacion adicional para tener en cuenta"
             buttonText="+ Info"
             onClick={() => openModalWithContent(<TipsAndNotes />)}
             icon={<Board />}
-          />
+          /> */}
         </div>
       </div>
       <Modal isOpen={modalContent !== null} onClose={closeModal}>
