@@ -10,6 +10,11 @@ export default function Gifts() {
   const [modalContent, setModalContent] = useState(null);
   const openModalWithContent = (content) => setModalContent(content);
   const closeModal = () => setModalContent(null);
+
+  const openGiftsList = () => {
+    const url = "https://www.decasorio.com.ar/lista/pilimygonzab";
+    window.open(url, "_blank");
+  };
   return (
     <Section padding={0}>
       <div className={styles.container}>
@@ -23,7 +28,7 @@ export default function Gifts() {
         <Gift />
         <div>
           <Button
-            onClick={() => openModalWithContent(<AccountNumber />)}
+            onClick={openGiftsList}
             className={styles.buttonOutline}
             isOutline
           >

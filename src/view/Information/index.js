@@ -31,8 +31,7 @@ export default function Information() {
   };
 
   const openGoogleForms = () => {
-    const url =
-      "https://docs.google.com/forms/d/e/1FAIpQLSdWj8nas8JvGbrFkAf4fLpIRKjRB-iiPNB2NHJFK_LeuPorVQ/viewform?usp=pp_url";
+    const url = "https://forms.gle/QUeCTTDHpkiMF9k76";
     window.open(url, "_blank");
   };
 
