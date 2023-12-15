@@ -27,8 +27,10 @@ export default function AdditionalInfo() {
       <div className={styles.container}>
         <div className={styles.header}>
           <HeartArrows />
-          <h1>Fiesta</h1>
-          <h2>Hagamos juntos una fiesta única.</h2>
+          <div>
+            <h1>Fiesta</h1>
+            <h2>Hagamos juntos una fiesta única.</h2>
+          </div>
         </div>
         <div className={styles.cardsContainer}>
           <Card

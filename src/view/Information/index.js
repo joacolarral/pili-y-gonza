@@ -15,7 +15,7 @@ export default function Information() {
   const openGoogleCalendarEventModal = () => {
     const start = "20240316T210000Z";
     const end = "20240317T050000Z";
-    const title = encodeURIComponent("Casamiento Belu y Juan");
+    const title = encodeURIComponent("Casamiento Pili y Gonza");
     const details = encodeURIComponent("Detalles del evento");
     const location = encodeURIComponent(
       "Lagos Del Rocio, Pilar Centro, Pilar, Provincia de Buenos Aires, Argentina"

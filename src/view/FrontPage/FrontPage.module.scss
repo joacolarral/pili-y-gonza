@@ -6,6 +6,10 @@
   justify-content: center;
   align-items: center;
   background-image: url("../../images/bg_frontpage.jpg");
+
+  h1 {
+    margin-bottom: 0;
+  }
 }
 .greenTop {
   position: relative;
@@ -31,7 +35,6 @@
   font-weight: 400;
   color: $thirdly-color !important;
   font-family: "Akshar";
-  padding-bottom: 1rem;
 }
 
 .contentContainer {

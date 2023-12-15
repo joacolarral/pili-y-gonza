@@ -23,8 +23,12 @@ export default function Gallery() {
       <div className={styles.container}>
         <div className={styles.header}>
           <Camera />
-          <h1>Nosotros</h1>
-          <h2>Un minuto, un segundo, un instante que queda en la eternidad</h2>
+          <div>
+            <h1>Nosotros</h1>
+            <h2>
+              Un minuto, un segundo, un instante que queda en la eternidad
+            </h2>
+          </div>
         </div>
         {/* <div className={styles.singlePhoto}>
           <CardImage imageUrl={photo2} />
