@@ -1,7 +1,7 @@
-import React from "react";
-import ModalInfo from ".";
-import styles from "./ModalInfo.module.scss";
-import Moño from "../../../icons/moño";
+import React from 'react';
+import ModalInfo from '.';
+import styles from './ModalInfo.module.scss';
+import Moño from '../../../icons/moño';
 
 export default function DressCode() {
   return (
@@ -11,7 +11,7 @@ export default function DressCode() {
       classNameContent={styles.dressCode}
     >
       <p>
-        Elegimos un código de vestimenta formal; sin embargo, lo más importante
+        Elegimos un código de vestimenta formal, sin embargo, lo más importante
         es que se sientan cómodos y a gusto. Así que, mientras luzcan elegantes,
         ¡siéntanse libres de elegir atuendos en los que puedan disfrutar de la
         celebración al máximo!
