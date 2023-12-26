@@ -12,9 +12,6 @@ export default function FrontPage() {
           <div className={styles.initialNames}>
             <img src={initialNames} alt="" />
           </div>
-          {/* <div className={styles.content}>
-            <h2>Queremos que seas parte de éste momento tan especial.</h2>
-          </div> */}
         </div>
       </div>
       <div className={styles.greenBottom}></div>

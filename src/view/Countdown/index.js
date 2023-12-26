@@ -44,7 +44,7 @@ const Countdown = () => {
         <div className={styles.content}>
           <div className={styles.header}>
             <h1>¡Estas invitado!</h1>
-            <p>Queremos que seas parte de este momento tan especial.</p>
+            <h2>Queremos que seas parte de este momento tan especial.</h2>
           </div>
           <div className={styles.countdown}>
             {Object.keys(timeLeft).map((interval, index) => (

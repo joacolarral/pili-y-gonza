@@ -10,7 +10,9 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-
+  h2 {
+    padding: 0;
+  }
   button {
     width: 100%;
   }
@@ -31,7 +33,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
+
+ h1 {
+  margin-bottom: 0;
+ }
 }
 
 .subtitle {
@@ -48,4 +53,12 @@
   height: 100px;
   width: 100px;
   border: 1px solid red;
+}
+
+@include phone {
+  .container {
+    h2 {
+      padding: 0 !important;
+    }
+  }
 }
