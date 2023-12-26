@@ -38,7 +38,7 @@ export default function Information() {
   const ceremony = [
     {
       title: 'Día',
-      description: 'Sábado 16 de Marzo - 1hs',
+      description: 'Sábado 16 de Marzo - 18hs',
       buttonLabel: 'Agendar',
       onClick: openGoogleCalendarEventModal,
     },
