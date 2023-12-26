@@ -8,7 +8,7 @@ export default function FrontPage() {
     <Section padding={0}>
       <div className={styles.container}>
         <div className={styles.contentContainer}>
-          <h1 className={styles.dateNumber}>16.03.23</h1>
+          <h1 className={styles.dateNumber}>16.03.24</h1>
           <div className={styles.initialNames}>
             <img src={initialNames} alt="" />
           </div>

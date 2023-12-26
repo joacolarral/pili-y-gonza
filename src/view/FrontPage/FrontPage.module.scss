@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: 100%;
   background-image: url('../../images/bg_frontpage.jpg');
   min-height: 100vh;
   h1 {
@@ -66,18 +67,12 @@
   padding: 1rem 0;
 }
 
-@include laptop {
-  .container {
-    min-height: 100vh;
-  }
-}
 @include phone {
   .container {
     background-image: url('../../images/bg_frontpage_phone.jpg');
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 70vh;
   }
   .initialNames {
     border-top: 1px solid $thirdly-color;
@@ -99,7 +94,7 @@
   .contentContainer {
     position: relative;
     z-index: 999;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
     h2 {
       font-size: 0.8rem;
       position: relative;
@@ -110,10 +105,9 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 380px) {
   .container {
     background-image: url('../../images/bg_frontpage_phone.jpg');
-    min-height: 70vh;
   }
   .initialNames {
     img {
@@ -131,6 +125,6 @@
     }
   }
   .contentContainer {
-    padding-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 }
