@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import styles from "./Countdown.module.scss";
-import Section from "../../components/Section";
+import React, { useState, useEffect } from 'react';
+import styles from './Countdown.module.scss';
+import Section from '../../components/Section';
 
 const Countdown = () => {
-  const targetDate = new Date("2024-03-16T00:00:00");
+  const targetDate = new Date('2024-03-16T00:00:00');
 
   const calculateTimeLeft = () => {
     const difference = +targetDate - +new Date();
@@ -42,7 +42,10 @@ const Countdown = () => {
     <Section secondaryBg>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1>Faltan</h1>
+          <div className={styles.header}>
+            <h1>¡Estas invitado!</h1>
+            <p>Queremos que seas parte de este momento tan especial.</p>
+          </div>
           <div className={styles.countdown}>
             {Object.keys(timeLeft).map((interval, index) => (
               <div className={styles.time} key={index}>
