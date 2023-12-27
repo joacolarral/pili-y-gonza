@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import Section from "../../components/Section";
-import Card from "../../components/Card";
-import styles from "./AdditionalInfo.module.scss";
-import Modal from "../../components/Modal";
-import SongSuggest from "../../components/Modal/ModalForm/SongSuggest";
-import DressCode from "../../components/Modal/ModalInfo/DressCode";
-import TipsAndNotes from "../../components/Modal/ModalInfo/TipsAndNotes";
-import HeartArrows from "../../icons/heartArrows";
-import Corchea from "../../icons/corchea";
-import Moño from "../../icons/moño";
-import Board from "../../icons/board";
+import React, { useState } from 'react';
+import Section from '../../components/Section';
+import Card from '../../components/Card';
+import styles from './AdditionalInfo.module.scss';
+import Modal from '../../components/Modal';
+import SongSuggest from '../../components/Modal/ModalForm/SongSuggest';
+import DressCode from '../../components/Modal/ModalInfo/DressCode';
+import TipsAndNotes from '../../components/Modal/ModalInfo/TipsAndNotes';
+import HeartArrows from '../../icons/heartArrows';
+import Corchea from '../../icons/corchea';
+import Moño from '../../icons/moño';
+import Board from '../../icons/board';
 
 export default function AdditionalInfo() {
   const [modalContent, setModalContent] = useState(null);
@@ -18,8 +18,8 @@ export default function AdditionalInfo() {
 
   const openSpotify = () => {
     const url =
-      "https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=s08SDcNtRqaQNSp1_5lrJg&pt=1d59c5257ced426dc308730a3d755926";
-    window.open(url, "_blank");
+      'https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=s08SDcNtRqaQNSp1_5lrJg&pt=1d59c5257ced426dc308730a3d755926';
+    window.open(url, '_blank');
   };
 
   return (
@@ -29,7 +29,7 @@ export default function AdditionalInfo() {
           <HeartArrows />
           <div>
             <h1>Fiesta</h1>
-            <h2>Hagamos juntos una fiesta única.</h2>
+            <h2>Hagamos juntos una fiesta única</h2>
           </div>
         </div>
         <div className={styles.cardsContainer}>
@@ -42,7 +42,7 @@ export default function AdditionalInfo() {
           />
           <Card
             title="Música"
-            subtitle="¿Cuál es la canción que no puede falta en la playlist de la fiesta?"
+            subtitle="¿Cuál es la canción que no puede faltar en la playlist de la fiesta?"
             buttonText="Sugerir Canción"
             onClick={openSpotify}
             icon={<Corchea />}

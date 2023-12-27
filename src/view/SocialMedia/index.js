@@ -22,7 +22,7 @@ export default function SocialMedia() {
             <h1>¡Vivamos juntos este día tan especial!</h1>
             <h2>
               Compartí tus fotos y vídeos de este día directamente en Instagram
-              y no olvides etiquetarnos para celebrar juntos.
+              y no olvides etiquetarnos para celebrar juntos
             </h2>
           </div>
         </div>

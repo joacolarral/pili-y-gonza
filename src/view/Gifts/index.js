@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import Section from "../../components/Section";
-import Button from "../../components/Button";
-import styles from "./Gifts.module.scss";
-import Modal from "../../components/Modal";
-import AccountNumber from "../../components/Modal/ModalInfo/AccountNumber";
-import Gift from "../../icons/gift";
+import React, { useState } from 'react';
+import Section from '../../components/Section';
+import Button from '../../components/Button';
+import styles from './Gifts.module.scss';
+import Modal from '../../components/Modal';
+import AccountNumber from '../../components/Modal/ModalInfo/AccountNumber';
+import Gift from '../../icons/gift';
 
 export default function Gifts() {
   const [modalContent, setModalContent] = useState(null);
@@ -12,8 +12,8 @@ export default function Gifts() {
   const closeModal = () => setModalContent(null);
 
   const openGiftsList = () => {
-    const url = "https://www.decasorio.com.ar/lista/pilimygonzab";
-    window.open(url, "_blank");
+    const url = 'https://www.decasorio.com.ar/lista/pilimygonzab';
+    window.open(url, '_blank');
   };
   return (
     <Section padding={0}>
@@ -22,7 +22,7 @@ export default function Gifts() {
           <h1>Regalos</h1>
           <h2>
             Lo más importante es tu presencia, pero si deseas hacernos un regalo
-            acá dejamos algunas opciones.
+            acá dejamos algunas opciones
           </h2>
         </div>
         <Gift />
