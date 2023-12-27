@@ -14,7 +14,7 @@ export default function Information() {
 
   const openGoogleCalendarEventModal = () => {
     const start = '20240316T210000Z';
-    const end = '20240317T050000Z';
+    const end = '20240317T070000Z';
     const title = encodeURIComponent('Casamiento Pili y Gonza');
     const details = encodeURIComponent('Detalles del evento');
     const location = encodeURIComponent(
@@ -49,7 +49,7 @@ export default function Information() {
       onClick: openGoogleForms,
     },
     {
-      title: 'Asistencia',
+      title: 'Dirección',
       description:
         'Mendoza 139-299, Ingeniero Maschwitz, Provincia de Buenos Aires',
       buttonLabel: 'Ver ubicación',
