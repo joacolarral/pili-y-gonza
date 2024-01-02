@@ -18,7 +18,7 @@ export default function AdditionalInfo() {
 
   const openSpotify = () => {
     const url =
-      'https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=bvM2YHhBQiC5RJymnglzVw&pi=u-rgMYz847RmWJ';
+      'https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=ECJ3XElgT4aVcCyYAthXDQ&pi=u-MNLHvjASQDeW&pt=f6439338626eb2475865ef64e984e3e4';
     window.open(url, '_blank');
   };
 
