@@ -26,7 +26,7 @@ export default function Gifts() {
           </h2>
         </div>
         <Gift />
-        <div>
+        <div className={styles.buttonsContainer}>
           <Button
             onClick={openGiftsList}
             className={styles.buttonOutline}
