@@ -3,13 +3,10 @@ import Section from '../../components/Section';
 import Card from '../../components/Card';
 import styles from './AdditionalInfo.module.scss';
 import Modal from '../../components/Modal';
-import SongSuggest from '../../components/Modal/ModalForm/SongSuggest';
 import DressCode from '../../components/Modal/ModalInfo/DressCode';
-import TipsAndNotes from '../../components/Modal/ModalInfo/TipsAndNotes';
 import HeartArrows from '../../icons/heartArrows';
 import Corchea from '../../icons/corchea';
 import Moño from '../../icons/moño';
-import Board from '../../icons/board';
 
 export default function AdditionalInfo() {
   const [modalContent, setModalContent] = useState(null);
@@ -18,7 +15,7 @@ export default function AdditionalInfo() {
 
   const openSpotify = () => {
     const url =
-      'https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=ECJ3XElgT4aVcCyYAthXDQ&pi=u-MNLHvjASQDeW&pt=f6439338626eb2475865ef64e984e3e4';
+      'https://open.spotify.com/playlist/1eZGbD8t49HbRpQkLbBTci?si=EZHgufs2S9qcT_5XUbruLA&pi=u-UVF_1ZuIT6GC';
     window.open(url, '_blank');
   };
 
